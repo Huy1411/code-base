@@ -1,0 +1,33 @@
+@mixin for-potrait-phones {
+  @content;
+}
+
+@mixin for-landscape-phones {
+  @media screen and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin for-tablets {
+  @media screen and (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin for-desktops {
+  @media screen and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin for-large-desktops {
+  @media screen and (min-width: $xl) {
+    @content;
+  }
+}
+
+@mixin for-larger-desktops {
+  @media screen and (min-width: $xxl) {
+    @content;
+  }
+}
